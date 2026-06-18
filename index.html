@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducati Homepage Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        /* Custom Ducati Red */
+        .bg-ducati-red { background-color: #E31837; }
+        .text-ducati-red { color: #E31837; }
+        .border-ducati-red { border-color: #E31837; }
+    </style>
+</head>
+<body class="bg-gray-100 text-neutral-900 antialiased">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-zinc-900 text-white text-[11px] px-6 py-2 flex justify-between items-center border-b border-zinc-800">
+        <div class="flex items-center space-x-6">
+            <span class="font-bold tracking-wider">100 A CENTURY MADE OF SECONDS</span>
+            <span class="text-gray-400">|</span>
+            <span class="font-bold tracking-wider text-yellow-500">SCRAMBLER DUCATI</span>
+            <span class="text-gray-400 text-xs">THE LAND OF JOY</span>
+        </div>
+        <div class="flex items-center space-x-6 text-gray-300">
+            <a href="#" class="hover:text-white flex items-center space-x-1">
+                <i class="fa-solid fa-globe"></i>
+                <span>INTERNATIONAL WEBSITE</span>
+                <i class="fa-solid fa-chevron-down text-[9px]"></i>
+            </a>
+            <a href="#" class="hover:text-white flex items-center space-x-1">
+                <i class="fa-solid fa-user"></i>
+                <span>MYDUCATI</span>
+                <i class="fa-solid fa-chevron-down text-[9px]"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR WITH MEGA MENUS -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-20">
+            
+            <div class="flex items-center space-x-8 h-full">
+                <button class="text-xl p-2 text-neutral-700 hover:text-black">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <!-- MODELS DROPDOWN -->
+                <div class="relative group h-full flex items-center">
+                    <button class="font-bold text-sm tracking-widest text-neutral-600 group-hover:text-black flex items-center space-x-1 h-full">
+                        <span>MODELS</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute left-0 top-20 w-[85vw] max-w-5xl bg-white shadow-2xl rounded-b-md border-t border-gray-100 p-6 hidden group-hover:block transition-all duration-300">
+                        <div class="grid grid-cols-4 md:grid-cols-7 gap-4 max-h-[60vh] overflow-y-auto p-2">
+                            <!-- Model Items inside dropdown -->
+                            <div class="text-center group/item cursor-pointer p-2 hover:bg-gray-50 rounded transition">
+                                <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=150&q=80" alt="DesertX" class="w-full h-16 object-contain mix-blend-multiply transition-transform group-hover/item:scale-105">
+                                <p class="text-[11px] font-bold mt-2 tracking-wider">DESERTX</p>
+                                <span class="text-[9px] font-bold text-ducati-red block">NEW</span>
+                            </div>
+                            <div class="text-center group/item cursor-pointer p-2 hover:bg-gray-50 rounded transition">
+                                <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=150&q=80" alt="Diavel" class="w-full h-16 object-contain mix-blend-multiply transition-transform group-hover/item:scale-105">
+                                <p class="text-[11px] font-bold mt-2 tracking-wider">DIAVEL</p>
+                                <span class="text-[9px] font-bold text-ducati-red block">NEW</span>
+                            </div>
+                            <!-- Tambahkan item dropdown lainnya secara manual jika dibutuhkan -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- EQUIPMENT DROPDOWN -->
+                <div class="relative group h-full flex items-center">
+                    <button class="font-bold text-sm tracking-widest text-neutral-600 group-hover:text-black flex items-center space-x-1 h-full">
+                        <span>EQUIPMENT</span>
+                        <i class="fa-solid fa-chevron-down text-[9px] transition-transform group-hover:rotate-180"></i>
+                    </button>
+                    <div class="absolute left-0 top-20 w-[70vw] max-w-4xl bg-white shadow-2xl rounded-b-md border-t border-gray-100 p-8 hidden group-hover:block transition-all duration-300">
+                        <div class="grid grid-cols-3 gap-8">
+                            <div>
+                                <h4 class="font-bold text-xs tracking-wider text-gray-400 mb-3 border-b pb-1">ACCESSORIES</h4>
+                                <ul class="space-y-2 text-xs font-semibold text-neutral-700">
+                                    <li class="hover:text-ducati-red cursor-pointer">Overview</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Configure your bike</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Panigale</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Multistrada</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Monster</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs tracking-wider text-gray-400 mb-3 border-b pb-1">APPAREL</h4>
+                                <ul class="space-y-2 text-xs font-semibold text-neutral-700">
+                                    <li class="hover:text-ducati-red cursor-pointer">Overview</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Make your own suit</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Motorcycle wear</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Casual wear</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xs tracking-wider text-gray-400 mb-3 border-b pb-1">COLLAB</h4>
+                                <ul class="space-y-2 text-xs font-semibold text-neutral-700">
+                                    <li class="hover:text-ducati-red cursor-pointer">LEGO® Technic™ X Ducati</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Supreme® X Ducati</li>
+                                    <li class="hover:text-ducati-red cursor-pointer">Bulgari X Ducati</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="font-bold text-sm tracking-widest text-neutral-600 hover:text-black">SHOP</a>
+                <a href="#" class="font-bold text-sm tracking-widest text-neutral-600 hover:text-black">WDW 2026</a>
+            </div>
+
+            <div class="absolute left-1/2 transform -translate-x-1/2 z-10">
+                <a href="#">
+                    <div class="bg-ducati-red w-14 h-16 flex flex-col justify-center items-center shadow-md rounded-b-xl border-t-4 border-black">
+                        <span class="text-white font-black italic tracking-tighter text-xs leading-none">DUCATI</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex items-center space-x-6 font-bold text-xs tracking-wider text-neutral-600">
+                <a href="#" class="hover:text-black flex items-center space-x-1">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="hidden md:inline">DEALER LOCATOR</span>
+                </a>
+                <a href="#" class="hover:text-black flex items-center space-x-1">
+                    <i class="fa-solid fa-motorcycle"></i>
+                    <span class="hidden md:inline">TEST RIDE</span>
+                </a>
+                <a href="#" class="hover:text-black flex items-center space-x-1">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span class="hidden md:inline">CONFIGURATOR</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="bg-ducati-red text-white relative overflow-hidden h-[500px] md:h-[600px] flex items-center">
+        <div class="absolute right-0 top-0 bottom-0 w-1/2 bg-black/10 transform skew-x-12 translate-x-20 hidden md:block"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center relative z-10 w-full">
+            <div class="space-y-6">
+                <p class="font-bold tracking-widest text-sm opacity-90 uppercase">World Ducati Week Centenary Edition</p>
+                <h1 class="text-5xl md:text-7xl font-black italic tracking-tight uppercase leading-none">
+                    LIVE THE<br><span class="text-black">LEGEND</span>
+                </h1>
+                <p class="text-base font-light tracking-wide max-w-md">
+                    Celebrate 100 years of speed, design, and Italian passion. Join the massive global gathering at Misano.
+                </p>
+                <button class="bg-black hover:bg-neutral-900 text-white font-bold text-xs tracking-widest px-8 py-4 transition uppercase shadow-lg">
+                    Discover More
+                </button>
+            </div>
+            <div class="hidden md:flex justify-center relative">
+                <!-- Ganti "images/download.jpg" atau gunakan URL cadangan di bawah ini -->
+                <img src="images/download.jpg" alt="Ducati Superbike" class="max-w-md max-w-md object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.6)] rounded-lg">
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION: BIKE SELECTION GRID (Ubah Foto Disini) -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 bg-white p-8 shadow-sm rounded-lg">
+            
+            <!-- Card 1: DesertX -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/desert x.png" alt="DesertX" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">DesertX</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Enduro</p>
+            </div>
+
+            <!-- Card 2: Diavel -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/diavel v4.png" alt="Diavel" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Diavel V4</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Cruiser</p>
+            </div>
+
+            <!-- Card 3: Monster -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/monster.png" alt="Monster" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Monster V4</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Naked</p>
+            </div>
+
+            <!-- Card 4: Multistrada -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/multistrada v4 rs.png" alt="Multistrada" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Multistrada V4</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Touring</p>
+            </div>
+
+            <!-- Card 5: Panigale -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/panigale v4r.png" alt="Panigale" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Panigale V4 R</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Superbike</p>
+            </div>
+
+            <!-- Card 6: Streetfighter -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/streetfighter v4.png" alt="Streetfighter" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Streetfighter V4</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Naked</p>
+            </div>
+
+            <!-- Card 7: Superleggera -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/panigale v4.png" alt="Superleggera" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Superleggera V4</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Exotic</p>
+            </div>
+
+            <!-- Card 8: Hypermotard -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/hypermotard v2 sp.png" alt="Hypermotard" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Hypermotard 950</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Fun</p>
+            </div>
+
+            <!-- Card 9: Scrambler -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/scrambler nightshift.png" alt="Scrambler" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">Scrambler Icon</h3>
+                <p class="text-xs text-gray-400 mt-0.5">Heritage</p>
+            </div>
+
+            <!-- Card 10: E-Bike -->
+            <div class="text-center cursor-pointer group p-4 hover:shadow-md transition rounded border border-transparent hover:border-gray-100">
+                <img src="images/xdiavel v4.png" alt="E-Bike" class="w-full h-32 object-cover rounded mix-blend-multiply transition-transform group-hover:scale-105">
+                <h3 class="font-bold text-sm tracking-wide mt-3 text-neutral-800">XDiavel</h3>
+                <p class="text-xs text-gray-400 mt-0.5">cruiser</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS SECTION -->
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+        <h2 class="text-xs font-bold tracking-widest text-gray-400 mb-6 uppercase">Highlights</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-neutral-900 text-white rounded-lg overflow-hidden flex flex-col justify-between group cursor-pointer shadow-lg">
+                <div class="p-8 space-y-4 max-w-md">
+                    <h3 class="text-2xl font-black italic tracking-wide">"What is the Ducati custom drama?"</h3>
+                    <p class="text-xs text-gray-400 font-light leading-relaxed">
+                        Step inside the design studio to see how concepts transform into limited engineering masterpieces.
+                    </p>
+                    <button class="text-xs font-bold tracking-widest text-ducati-red border-b border-ducati-red pb-1 group-hover:text-white group-hover:border-white transition uppercase">Watch Video</button>
+                </div>
+                <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?auto=format&fit=crop&w=600&q=80" alt="Detail" class="w-full h-56 object-cover object-center mt-4">
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow flex items-center p-4 hover:shadow-md transition cursor-pointer">
+                    <div class="flex-1 pr-4">
+                        <span class="text-[10px] font-bold text-ducati-red tracking-wider uppercase">Racing</span>
+                        <h4 class="font-bold text-sm mt-1">Experience the pure adrenaline of MotoGP with Lenovo Team.</h4>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=150&q=80" alt="MotoGP" class="w-24 h-24 object-cover rounded-md">
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow flex items-center p-4 hover:shadow-md transition cursor-pointer">
+                    <div class="flex-1 pr-4">
+                        <span class="text-[10px] font-bold text-ducati-red tracking-wider uppercase">Academy</span>
+                        <h4 class="font-bold text-sm mt-1">DRE Riding Academy: Improve your skills on track with world champions.</h4>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1508962914676-134849a727f0?auto=format&fit=crop&w=150&q=80" alt="DRE Academy" class="w-24 h-24 object-cover rounded-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST NEWS SECTION -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="text-xs font-bold tracking-widest text-gray-400 uppercase">Latest News</h2>
+                <h3 class="text-2xl font-black italic tracking-wide uppercase mt-1">Stay Updated</h3>
+            </div>
+            <a href="#" class="text-xs font-bold text-ducati-red hover:underline tracking-wider">VIEW ALL NEWS <i class="fa-solid fa-arrow-right ml-1"></i></a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=400&q=80" alt="News" class="w-full h-48 object-cover">
+                <div class="p-6 space-y-2">
+                    <span class="text-[10px] font-bold text-gray-400 tracking-wider uppercase">Product | 15 June 2026</span>
+                    <h4 class="font-bold text-base text-neutral-800 group-hover:text-ducati-red transition">New Panigale V4 Spec upgrades revealed ahead of WDW.</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=400&q=80" alt="News" class="w-full h-48 object-cover">
+                <div class="p-6 space-y-2">
+                    <span class="text-[10px] font-bold text-gray-400 tracking-wider uppercase">Corporate | 10 June 2026</span>
+                    <h4 class="font-bold text-base text-neutral-800 group-hover:text-ducati-red transition">Ducati logs record-breaking Q2 performance globally.</h4>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1471440671318-55dddde1a56c?auto=format&fit=crop&w=400&q=80" alt="News" class="w-full h-48 object-cover">
+                <div class="p-6 space-y-2">
+                    <span class="text-[10px] font-bold text-gray-400 tracking-wider uppercase">Community | 01 June 2026</span>
+                    <h4 class="font-bold text-base text-neutral-800 group-hover:text-ducati-red transition">Ducati Owners Club ride schedules for Asia Pacific region.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-neutral-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="border-b border-neutral-800 pb-12 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h3 class="text-xl font-bold italic uppercase tracking-wider">Keep Up With The Legend</h3>
+                    <p class="text-xs text-gray-400 mt-1">Get exclusive news, model leaks, and priority access to race events.</p>
+                </div>
+                <div class="flex w-full md:w-auto max-w-md">
+                    <input type="email" placeholder="Your Email Address" class="bg-neutral-800 px-4 py-3 text-xs w-full focus:outline-none focus:ring-1 focus:ring-ducati-red text-white">
+                    <button class="bg-ducati-red hover:bg-red-700 text-white text-xs font-bold tracking-widest px-6 py-3 transition uppercase">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 text-xs">
+                <div class="space-y-3">
+                    <h5 class="font-bold text-gray-400 tracking-widest uppercase">MODELS</h5>
+                    <ul class="space-y-2 font-medium text-gray-300">
+                        <li class="hover:text-ducati-red cursor-pointer">Superbike</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Naked</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Touring</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Scrambler</li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h5 class="font-bold text-gray-400 tracking-widest uppercase">RACING</h5>
+                    <ul class="space-y-2 font-medium text-gray-300">
+                        <li class="hover:text-ducati-red cursor-pointer">MotoGP</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Superbike World Championship</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Ducati Corse</li>
+                    </ul>
+                </div>
+                <div class="space-y-3">
+                    <h5 class="font-bold text-gray-400 tracking-widest uppercase">COMPANY</h5>
+                    <ul class="space-y-2 font-medium text-gray-300">
+                        <li class="hover:text-ducati-red cursor-pointer">About Us</li>
+                        <li class="hover:text-ducati-red cursor-pointer">History</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Sustainability</li>
+                        <li class="hover:text-ducati-red cursor-pointer">Careers</li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h5 class="font-bold text-gray-400 tracking-widest uppercase">FOLLOW US</h5>
+                    <div class="flex space-x-4 text-lg text-gray-400">
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-neutral-800 pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] text-gray-500 gap-4">
+                <p>&copy; 2026 Ducati Motor Holding S.p.A. - A Sole Shareholder Company - A Company subject to the management and coordination activities of AUDI AG.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Cookies Policy</a>
+                    <a href="#" class="hover:underline">Legal Notes</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
